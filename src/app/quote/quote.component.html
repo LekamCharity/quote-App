@@ -1,9 +1,23 @@
-<div>
+<div class="overlay">
+  <div class="container">
     <h1>Quotes</h1>
-    <ul>
-      <li *ngFor='let quote of quotes'>
-        {{ quote.name }}
-        <app-quote-detail [goal]='goal'></app-quote-detail>
-      </li>
-    </ul>
+    <hr>
+    <div class="row">
+      <div class="col-md-12">
+      <div *ngFor='let quote of quotes;let i=index' class="card">
+        <div class="card-body">
+        <p class="card-text">{{ quote.name }}</p>
+        </div>
+        <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.user}}</span><span id="date"><span id="datecolor">{{quote.datePosted|date}}</span></span></span>
+         <div>
+        <app-quote-detail [goal]='goal' (isRead)='quoteDelete($event,i)'></app-quote-detail>
+         </div>
+      </div>
+      </div>
+    </div>
   </div>
+</div>
+<div class="col-md-12">
+  <app-quote-form (addNew)="addNewQuote($event)"></app-quote-form>
+</div>
+
