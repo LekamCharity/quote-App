@@ -1,5 +1,6 @@
-import { Quote } from '@angular/compiler';
+
 import { Component, Input, OnInit,Output,EventEmitter } from '@angular/core';
+import { Quote } from '../quote';
 
 @Component({
   selector: 'app-quote-detail',
@@ -13,6 +14,13 @@ export class QuoteDetailComponent implements OnInit {
 
   deleteQuote(read: boolean) {
     this.isRead.emit(read);
+  }
+
+upvote() {
+    this.quote.likes += 1;
+  }
+  downvote() {
+    this.quote.dislike += 1;
   }
 
   constructor() { }

@@ -7,15 +7,13 @@
     <div class="card col md-6 " *ngFor="let quote of quotes">
 
     <div class="card-body">
-    <h1 class="card-title text-uppercase text-secondary">{{quote.author}}</h1>
+    <span>Author:<h1 class="card-title text-uppercase text-secondary">{{quote.author}}</h1>
+    </span>
+    <span>Quote:
     <p class="card-subtitle mb-2 text-muted">{{quote.quotename}}</p>
+    </span>
     <span>Submitted by:<p>{{quote.user}}</p>
     </span>
-    <div class=" row container">
-    <p class="pr-5"><i class="far fa-thumbs-up"></i></p>
-    <p><i class="fas fa-thumbs-down"></i></p>
-    <p><i class="fas fa-trash-alt pr-5"></i></p>
-    </div>
   </div>
 </div>
 </div>
