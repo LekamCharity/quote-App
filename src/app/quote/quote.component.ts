@@ -8,13 +8,13 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote(1, 'Abubakar Nasir', 'I\'m just a good programmer with great habits..','Lekam Charity',
+    new Quote(1, 'John Paker', 'Never give up.','Lekam Charity',
     new Date(),0, 0),
-    new Quote(1, 'Henry Kibua', 'I\'m just a good programmer with great habits..','Dorcas Cherono',
+    new Quote(1, 'Henry Kibua', 'Better late than never','Dorcas Cherono',
     new Date(),0, 0),
-    new Quote(1, 'Abubakar Nasir', 'I\'m just a good programmer with great habits..','Kate Wambui',
+    new Quote(1, 'Karley Charlie', 'The early bad catches the early worm.','Kate Wambui',
     new Date(),0, 0),
-    new Quote(1, 'Abubakar Nasir', 'I\'m just a good programmer with great habits..','Ben Osongo',
+    new Quote(1, 'Moreno Quincy', 'Save more than you spend.','Ben Osongo',
     new Date(),0, 0),
   ];
   addNewQuote(quote){

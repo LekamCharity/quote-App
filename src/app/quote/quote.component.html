@@ -1,29 +1,30 @@
 
 <div class="container">
-  <div class="row">
+<div class="row">
 <div class=col-sm>
-  <div class="container">
-    <div class="row">
-      <div class="card col-6 m-3" *ngFor="let quote of quotes">
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-2">
+    <div class="card col md-6 " *ngFor="let quote of quotes">
 
-      <div class="card-body">
-      <h5 class="card-title text-uppercase text-secondary">{{quote.author}}</h5>
-      <p class="card-subtitle mb-2 text-muted">{{quote.quotename}}</p>
-      <span>Submitted by:<p>{{quote.user}}</p>
-      </span>
-      <div class=" row container">
-      <p class="pr-5"><i class="far fa-thumbs-up"></i></p>
-      <p><i class="fas fa-thumbs-down"></i></p>
-      <p><i class="fas fa-trash-alt pr-5"></i></p>
-      </div>
+    <div class="card-body">
+    <h1 class="card-title text-uppercase text-secondary">{{quote.author}}</h1>
+    <p class="card-subtitle mb-2 text-muted">{{quote.quotename}}</p>
+    <span>Submitted by:<p>{{quote.user}}</p>
+    </span>
+    <div class=" row container">
+    <p class="pr-5"><i class="far fa-thumbs-up"></i></p>
+    <p><i class="fas fa-thumbs-down"></i></p>
+    <p><i class="fas fa-trash-alt pr-5"></i></p>
     </div>
   </div>
 </div>
 </div>
 </div>
+</div>
 <div class='col-sm'>
-  <app-form (addquote)="addNewQuote($event)"></app-form>
+<app-form (addquote)="addNewQuote($event)"></app-form>
 </div>
-  </div>
+</div>
+</div>
 
-</div>
+
