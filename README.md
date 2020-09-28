@@ -1,5 +1,13 @@
 # QuotesApp
+## By Lekam Charity
 
+## Description
+Tis is a simple Angular application that allows you to create quotes,upvotes, deownvotes or even delete a quote.
+
+## Live Page
+https://github.com/LekamCharity/quote-App/
+
+## User
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
 
 ## Development server
@@ -25,3 +33,35 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Installation /Setup instruction
+* Open Terminal {Ctrl+Alt+T}
+
+* git clone ```https://github.com/LekamCharity/quote-App.git```
+
+* cd quotes-App
+
+* code . or atom . based on the text editor you have.
+
+## Technologies Used
+* Html
+
+* JavaScript
+
+* TypeScript
+
+* CSS
+
+* AngularCLI
+
+
+## Known Bugs
+* Highlight directive property does not work properly
+
+## Contact Information 
+
+If you have any question or contributions, please email me at [lekamcharity@gmail.com]
+
+## License
+* *MIT License:*
+* Copyright (c) 2019 **Lekam Charity**
