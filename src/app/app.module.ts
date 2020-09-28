@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { FormComponent } from './form/form.component';
-import { VoteComponent } from './vote/vote.component';
+import { StrikethroughDirective } from './strikethrough.directive';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { VoteComponent } from './vote/vote.component';
     QuoteComponent,
     QuoteDetailComponent,
     FormComponent,
-    VoteComponent
+    StrikethroughDirective,
+    DateCountPipe,
 
   ],
   imports: [
