@@ -1,23 +1,29 @@
-<div class="overlay">
+
+<div class="container">
+  <div class="row">
+<div class=col-sm>
   <div class="container">
-    <h1>Quotes</h1>
-    <hr>
     <div class="row">
-      <div class="col-md-12">
-      <div *ngFor='let quote of quotes;let i=index' class="card">
-        <div class="card-body">
-        <p class="card-text">{{ quote.name }}</p>
-        </div>
-        <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.user}}</span><span id="date"><span id="datecolor">{{quote.datePosted|date}}</span></span></span>
-         <div>
-        <app-quote-detail [goal]='goal' (isRead)='quoteDelete($event,i)'></app-quote-detail>
-         </div>
-      </div>
+      <div class="card col-6 m-3" *ngFor="let quote of quotes">
+
+      <div class="card-body">
+      <h5 class="card-title text-uppercase text-secondary">{{quote.author}}</h5>
+      <p class="card-subtitle mb-2 text-muted">{{quote.quotename}}</p>
+      <span>Submitted by:<p>{{quote.user}}</p>
+      </span>
+      <div class=" row container">
+      <p class="pr-5"><i class="far fa-thumbs-up"></i></p>
+      <p><i class="fas fa-thumbs-down"></i></p>
+      <p><i class="fas fa-trash-alt pr-5"></i></p>
       </div>
     </div>
   </div>
 </div>
-<div class="col-md-12">
-  <app-quote-form (addNew)="addNewQuote($event)"></app-quote-form>
 </div>
+</div>
+<div class='col-sm'>
+  <app-form (addquote)="addNewQuote($event)"></app-form>
+</div>
+  </div>
 
+</div>

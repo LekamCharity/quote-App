@@ -7,13 +7,23 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quotes:Quote[] = [
-    {id:1, name:'Save more than you spend'}, 
-    {id:2, name:'Love is a choise not a feeling'}, 
-    {id:3, name:'Maturity requires interdependent'},
-     ];
-     
-  constructor() { }
+  quotes: Quote[] = [
+    new Quote(1, 'Abubakar Nasir', 'I\'m just a good programmer with great habits..','Lekam Charity',
+    new Date(),0, 0),
+    new Quote(1, 'Henry Kibua', 'I\'m just a good programmer with great habits..','Dorcas Cherono',
+    new Date(),0, 0),
+    new Quote(1, 'Abubakar Nasir', 'I\'m just a good programmer with great habits..','Kate Wambui',
+    new Date(),0, 0),
+    new Quote(1, 'Abubakar Nasir', 'I\'m just a good programmer with great habits..','Ben Osongo',
+    new Date(),0, 0),
+  ];
+  addNewQuote(quote){
+    quote.author=quote.author;
+    quote.quotename=quote.quotename;
+    quote.user=quote.user;
+    this.quotes.push(quote)
+  }
+  constructor() {}
 
   ngOnInit(): void {
   }
