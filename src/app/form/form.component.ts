@@ -9,7 +9,7 @@ import{Quote} from '../quote'
 })
 export class FormComponent implements OnInit {
 
-  newQuote = new Quote(0, '', '', '', new Date(),0, 0);
+  newQuote = new Quote(0, '', '', '', new Date());
   @Output() addquote = new EventEmitter<Quote>();
 
   submitQuote(){

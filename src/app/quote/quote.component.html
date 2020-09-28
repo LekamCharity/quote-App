@@ -7,13 +7,15 @@
     <div class="card col md-6 " *ngFor="let quote of quotes">
 
     <div class="card-body">
-    <span>Author:<h1 class="card-title text-uppercase text-secondary">{{quote.author}}</h1>
+    <span>Quote:<h1 class="card-title text-uppercase text-secondary">{{quote.quotename}}</h1>
     </span>
-    <span>Quote:
-    <p class="card-subtitle mb-2 text-muted">{{quote.quotename}}</p>
-    </span>
-    <span>Submitted by:<p>{{quote.user}}</p>
-    </span>
+    <button  (click)='toggleDetails(i)' class="btn btn-success">Show Details</button>
+    <app-quote-detail *ngIf="quote.showDescription" [quote]="quote" (deleteQuote)="delete($event, i)"></app-quote-detail>
+    <div class="container" id="buttons">
+      <span class="btn btn-sm btn-success" (click)="upVote(i)">{{quote.upvote}} <i class="fa fa-thumbs-up" id="like"></i></span>
+      <span class="btn btn-sm " id="hate" (click)="downVote(i)" >{{quote.downvote}} <i class="fa fa-thumbs-down" id="dislike"></i></span>
+    
+    </div>
   </div>
 </div>
 </div>
