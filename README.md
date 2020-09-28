@@ -62,6 +62,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 If you have any question or contributions, please email me at [lekamcharity@gmail.com]
 
-## License
-* *MIT License:*
-* Copyright (c) 2019 **Lekam Charity**
+### License
+  [MIT](https://github.com/LekamCharity/quote-App/blob/master/LICENSE.md)
+Copyright (c) 2020 **Lekam Charity**
