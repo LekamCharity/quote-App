@@ -44,16 +44,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * code . or atom . based on the text editor you have.
 
 ## Technologies Used
-* Html
 
-* JavaScript
-
-* TypeScript
-
-* CSS
-
-* AngularCLI
-
+* The application is developed using ANGULAR CLI
 
 ## Known Bugs
 * Highlight directive property does not work properly
