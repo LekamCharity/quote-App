@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { FormComponent } from './form/form.component';
-import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
@@ -13,7 +12,6 @@ import { DateCountPipe } from './date-count.pipe';
     AppComponent,
     QuoteComponent,
     FormComponent,
-    StrikethroughDirective,
     DateCountPipe,
 
   ],

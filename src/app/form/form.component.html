@@ -1,31 +1,34 @@
 <div class="container-fluid">
-    <h2 class="text-center">Create a new Quote</h2>
-    <hr>
-    <form  (ngSubmit)='submitQuote()'#goalForm='ngForm'>
-        <div class="form-group">
-  
-            <label for="name">Author</label>
-            <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel' required>
-            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
-              <p>Name is required</p>
-            </div>
-        </div>   
-        <div class="form-group">
-  
-            <label for="quotename">Quote Text</label>
-            <textarea class="form-control" id="quotename" rows="4" [(ngModel)]="newQuote.quotename" name="quotename" #quotename="ngModel" required></textarea>
-            <div [hidden]="quotename.valid || quotename.pristine" class="alert alert-danger">
-              <p>QuoteText is required</p>
-            </div>
-        </div>
-        <div class="form-group">
-  
-            <label for="complete">Submitter</label>
-            <input type='text' class="form-control" id="user" [(ngModel)]="newQuote.user" name="user" #user="ngModel" required>
-            <div [hidden]="user.valid || user.pristine" class="alert alert-danger">
-              <p>SubmitterName is required</p>
-            </div>
-        </div>
-        <button type="submit" class="btn btn-success">Add Quote</button>
-    </form>
-  </div>
+  <h2 class="text-center">Create a new Quote</h2>
+  <hr>
+  <form (ngSubmit)='submitQuote()' #goalForm='ngForm'>
+    <div class="form-group">
+
+      <label for="name">Author</label>
+      <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel'
+        required>
+      <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+        <p>Name is required</p>
+      </div>
+    </div>
+    <div class="form-group">
+
+      <label for="quotename">Quote Text</label>
+      <textarea class="form-control" id="quotename" rows="4" [(ngModel)]="newQuote.quotename" name="quotename"
+        #quotename="ngModel" required></textarea>
+      <div [hidden]="quotename.valid || quotename.pristine" class="alert alert-danger">
+        <p>QuoteText is required</p>
+      </div>
+    </div>
+    <div class="form-group">
+
+      <label for="complete">Submitter</label>
+      <input type='text' class="form-control" id="user" [(ngModel)]="newQuote.user" name="user" #user="ngModel"
+        required>
+      <div [hidden]="user.valid || user.pristine" class="alert alert-danger">
+        <p>SubmitterName is required</p>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-success">Add Quote</button>
+  </form>
+</div>
