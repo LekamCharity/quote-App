@@ -63,5 +63,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 If you have any question or contributions, please email me at [lekamcharity@gmail.com]
 
 ### License
-  [MIT](https://github.com/LekamCharity/quote-App/blob/master/LICENSE.md)
+  [MIT](https://github.com/LekamCharity/quote-App/blob/master/License)
 Copyright (c) 2020 **Lekam Charity**
