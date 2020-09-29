@@ -1,45 +1,15 @@
 <div class="container">
-  <!-- <div class="row">
-    <div class=col-sm>
-      <div class="container">
-        <div class="row" *ngFor="let quote of quotes;let i = index">
-          <div class="card">
-            <div class="card-body">
-              <h1 class="card-title text-uppercase text-secondary">{{quote.author}}</h1>
-              <span class="row">
-                <i class="fas fa-quote-left pr-2"></i>
-                <p>{{quote.quotename}}</p>
-                <i class="fas fa-quote-right pl-2"></i>
-              </span>
-
-              <span class="row">Submitted by:<p>{{quote.user}}</p></span>
-
-              <span class="btn btn-sm btn-success" (click)="upVote(i)">{{quote.upvote}} <i class="fa fa-thumbs-up"
-                  id="like"></i></span>
-              <span class="btn btn-sm " id="hate" (click)="downVote(i)">{{quote.downvote}} <i class="fa fa-thumbs-down"
-                  id="dislike"></i></span>
-              <button><span class="btn btn-sm btn-danger" id="del" (click)='deleteQuote($event,i)'><i
-                    class="fa fa-trash" id="delete"></i></span></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class='col-sm'>
-      <app-form (addquote)="addNewQuote($event)"></app-form>
-    </div>
-  </div> -->
-
   <div class="row">
-
     <div class="col">
       <div class="row pt-2" *ngFor="let quote of quotes;let i = index">
         <div class="card">
           <h5 class="card-header">{{quote.author}}</h5>
           <div class="card-body">
             <p>{{quote.quotename}}</p>
-            <span class="row">Submitted by:<p>{{quote.user}}</p></span>
+            <span class="row">Submitted by:<p class="pr-5">{{quote.user}}</p>
+              <p class="pr-1">{{quote.datePosted|dateCount}}</p>
+              days ago
+            </span>
 
             <span class="btn btn-sm btn-success" (click)="upVote(i)">{{quote.upvote}} <i class="fa fa-thumbs-up"
                 id="like"></i></span>
@@ -55,7 +25,18 @@
     <div class="col">
       <app-form (addquote)="addNewQuote($event)"></app-form>
       <div>
-        <button type="button" class="btn btn-primary" (click) ="bestQuote()">Best Quote</button>
+        <button type="button" class="btn btn-primary" (click)="bestQuote()">Best Quote</button>
+      </div>
+
+      <div class="card" *ngIf='quote'>
+        <h5 class="card-header">{{author}}</h5>
+        <div class="card-body">
+          <p>{{quote}}</p>
+          <span class="row">Submitted by:<p>{{user}}</p></span>
+
+          <span class="btn btn-sm btn-success">{{morevotes}} <i class="fa fa-thumbs-up" id="like"></i></span>
+          <span class="btn btn-sm " id="hate">{{lessvotes}} <i class="fa fa-thumbs-down" id="dislike"></i></span>
+        </div>
       </div>
     </div>
   </div>
