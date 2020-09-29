@@ -7,6 +7,9 @@ Tis is a simple Angular application that allows you to create quotes,upvotes, de
 ## Live Page
 https://github.com/LekamCharity/quote-App/
 
+## Design link/Figma
+https://www.figma.com/file/q9lBogZfnRDxPy6r9GTnje/quote-App?node-id=0%3A1
+
 ## Technologies Used
 This project was generated with [Angular CLI]
 
