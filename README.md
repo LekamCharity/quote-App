@@ -7,7 +7,7 @@ Tis is a simple Angular application that allows you to create quotes,upvotes, de
 ## Live Page
 https://github.com/LekamCharity/quote-App/
 
-## User
+## Technologies Used
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
 
 ## Development server
@@ -42,10 +42,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * cd quotes-App
 
 * code . or atom . based on the text editor you have.
-
-## Technologies Used
-
-* The application is developed using ANGULAR CLI
 
 ## Known Bugs
 * Highlight directive property does not work properly
