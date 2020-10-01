@@ -4,7 +4,7 @@
 ## Description
 Tis is a simple Angular application that allows you to create quotes,upvotes, deownvotes or even delete a quote.
 
-## Live Page
+## Live link to the website
 https://github.com/LekamCharity/quote-App/
 
 ## Design link/Figma
@@ -31,4 +31,4 @@ If you have any question or contributions, please email me at [lekamcharity@gmai
 
 ### License
   [MIT](https://github.com/LekamCharity/quote-App/blob/master/License)
-Copyright (c) 2020 **Lekam Charity**
+
